@@ -197,7 +197,6 @@ namespace EntityFrameworkProject.Areas.AdminArea.Controllers
                 {
                     return RedirectToAction(nameof(Index));
                 }
-                //dbcategory.Name = category.Name;
 
                 _context.Categories.Update(category);
 

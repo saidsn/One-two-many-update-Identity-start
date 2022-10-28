@@ -1643,7 +1643,6 @@ C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identi
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.csproj.AssemblyReference.cache
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.AssemblyInfoInputs.cache
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.AssemblyInfo.cs
@@ -1657,6 +1656,12 @@ C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identi
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.TagHelpers.input.cache
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.TagHelpers.output.cache
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.RazorCoreGenerate.cache
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\BlogHeader\Create.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\BlogHeader\Index.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Index.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Book\Create.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Book\Edit.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Book\Index.cshtml.g.cs
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Create.cshtml.g.cs
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Detail.cshtml.g.cs
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Category\Edit.cshtml.g.cs
@@ -1703,6 +1708,9 @@ C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identi
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.dll
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.pdb
 C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.genruntimeconfig.cache
-C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Index.cshtml.g.cs
-C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\BlogHeader\Index.cshtml.g.cs
-C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\BlogHeader\Create.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\EntityFrameworkProject.csproj.AssemblyReference.cache
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\BlogHeader\Detail.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\BlogHeader\Edit.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Create.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Edit.cshtml.g.cs
+C:\Users\OMEN\OneDrive\İş masası\HomeWork ASP.NET\One two many update, Identity start\EntityFrameworkProject\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Blog\Detail.cshtml.g.cs

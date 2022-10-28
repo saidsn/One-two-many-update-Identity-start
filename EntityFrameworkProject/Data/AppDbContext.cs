@@ -20,6 +20,9 @@ namespace EntityFrameworkProject.Data
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Social> Socials { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<BookTag> BookTags { get; set; }
 
         protected  override void OnModelCreating(ModelBuilder modelBuilder)
         {

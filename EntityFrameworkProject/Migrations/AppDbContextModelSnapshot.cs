@@ -49,7 +49,7 @@ namespace EntityFrameworkProject.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2022, 10, 27, 17, 3, 54, 588, DateTimeKind.Local).AddTicks(1617),
+                            Date = new DateTime(2022, 10, 28, 10, 43, 41, 222, DateTimeKind.Local).AddTicks(8636),
                             Desc = "Desc-1",
                             Image = "blog-feature-img-1.jpg",
                             IsDeleted = false,
@@ -58,7 +58,7 @@ namespace EntityFrameworkProject.Migrations
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2022, 10, 27, 17, 3, 54, 588, DateTimeKind.Local).AddTicks(9784),
+                            Date = new DateTime(2022, 10, 28, 10, 43, 41, 223, DateTimeKind.Local).AddTicks(4350),
                             Desc = "Desc-2",
                             Image = "blog-feature-img-3.jpg",
                             IsDeleted = false,
@@ -67,7 +67,7 @@ namespace EntityFrameworkProject.Migrations
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2022, 10, 27, 17, 3, 54, 588, DateTimeKind.Local).AddTicks(9809),
+                            Date = new DateTime(2022, 10, 28, 10, 43, 41, 223, DateTimeKind.Local).AddTicks(4370),
                             Desc = "Desc-3",
                             Image = "blog-feature-img-4.jpg",
                             IsDeleted = false,
@@ -94,6 +94,49 @@ namespace EntityFrameworkProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BlogHeaders");
+                });
+
+            modelBuilder.Entity("EntityFrameworkProject.Models.Book", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("EntityFrameworkProject.Models.BookTag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("BookTags");
                 });
 
             modelBuilder.Entity("EntityFrameworkProject.Models.Category", b =>
@@ -338,6 +381,39 @@ namespace EntityFrameworkProject.Migrations
                             Name = "Instagram",
                             Url = "https://www.instagram.com/"
                         });
+                });
+
+            modelBuilder.Entity("EntityFrameworkProject.Models.Tag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("EntityFrameworkProject.Models.BookTag", b =>
+                {
+                    b.HasOne("EntityFrameworkProject.Models.Book", "Book")
+                        .WithMany("BookTags")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityFrameworkProject.Models.Tag", "Tag")
+                        .WithMany("BookTags")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EntityFrameworkProject.Models.Product", b =>

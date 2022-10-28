@@ -91,7 +91,7 @@ namespace EntityFrameworkProject.Areas.AdminArea.Controllers
 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return Ok(await _context.Socials.Where(m => !m.IsDeleted).OrderByDescending(m => m.Id).ToListAsync());
         }
 
 

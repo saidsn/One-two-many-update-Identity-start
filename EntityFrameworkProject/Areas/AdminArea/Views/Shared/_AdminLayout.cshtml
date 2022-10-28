@@ -202,6 +202,12 @@
                         </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" asp-area="AdminArea" asp-controller="Book" asp-action="Index">
+                            <i class="mdi mdi-view-headline menu-icon"></i>
+                            <span class="menu-title">Book</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" asp-area="AdminArea" asp-controller="Category" asp-action="Index">
                             <i class="mdi mdi-view-headline menu-icon"></i>
                             <span class="menu-title">Categories</span>
@@ -275,6 +281,7 @@
     <script src="~/admin/js/data-table.js"></script>
     <script src="~/admin/js/jquery.dataTables.js"></script>
     <script src="~/admin/js/dataTables.bootstrap4.js"></script>
+    <script asp-append-version="true" src="~/admin/js/admin.js"></script>
     <!-- End custom js for this page-->
     @RenderSection("Scripts", required: false)
 

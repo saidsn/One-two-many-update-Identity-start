@@ -17,6 +17,10 @@
     <Compile Remove="Migrations\20221021053130_CreateEmployee5Table.Designer.cs" />
     <Compile Remove="Migrations\20221021053833_EmpTable.cs" />
     <Compile Remove="Migrations\20221021053833_EmpTable.Designer.cs" />
+    <Compile Remove="Migrations\20221028055410_CreateBookTable.cs" />
+    <Compile Remove="Migrations\20221028055410_CreateBookTable.Designer.cs" />
+    <Compile Remove="Migrations\20221028055546_CreateBook1table.cs" />
+    <Compile Remove="Migrations\20221028055546_CreateBook1table.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

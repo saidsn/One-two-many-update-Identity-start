@@ -1,0 +1,50 @@
+﻿
+@model Blog
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container-fluid my-3 mx-3">
+    <div class="table-responsive pt-3">
+        <h2 style="text-align:center; color:blue" class="mb-5">- Blog Detail -</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        PublishDate
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="~/img/@Model.Image" alt="Image" />
+                    </td>
+                    <td>
+                        @Html.Raw(Model.Title)
+                    </td>
+                    <td>
+                        @Html.Raw(Model.Desc)
+                    </td>
+                    <td>
+                        @Html.Raw(Model.Date.ToString("MM-dd-yyyy"))
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a asp-controller="Blog" asp-action="Index" class="btn btn-primary my-3">Back</a>
+
+</div>
+
+
+

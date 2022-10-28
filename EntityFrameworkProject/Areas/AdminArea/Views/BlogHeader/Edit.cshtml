@@ -1,0 +1,50 @@
+﻿
+@model BlogHeader
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <div class="row my-5">
+        <span class="text-danger">@ViewBag.Message</span>
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-description">
+                        BlogHeader
+                    </p>
+                    <form asp-controller="BlogHeader" asp-action="Edit" class="forms-sample" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputUsername1">Header</label>
+                            @*<input maxlength="" minlength="" type="text" class="form-control" asp-for="Header">*@
+                            <textarea class="form-control rounded-0" asp-for="Header" id="Header-area" rows="10"></textarea>
+                            <span class="text-danger" asp-validation-for="Header"></span>
+
+                            <label for="exampleInputUsername1">Url</label>
+                            @*<input type="text" class="form-control" asp-for="HeaderDesc">*@
+                            <textarea class="form-control rounded-0" asp-for="HeaderDesc" id="HeaderDesc-area" rows="10"></textarea>
+                            <span class="text-danger" asp-validation-for="HeaderDesc"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary me-2">Edit</button>
+                        <a asp-controller="BlogHeader" asp-action="Index" class="btn btn-light">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationPartial" />
+
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+    <script>
+        CKEDITOR.replace("Header-area")
+        CKEDITOR.replace("HeaderDesc-area")
+    </script>
+}
+
+
+

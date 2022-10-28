@@ -28,9 +28,9 @@ namespace EntityFrameworkProject.ViewComponents
                 BlogHeader = await GetBlogHeaders()
 
             };
-            return await Task.FromResult(View(blogList));
+            return await Task.FromResult(View(blogList)); 
         }
-        private async Task<IEnumerable<Blog>>GetAllBlogs() => await _context.Blogs.ToListAsync();
-        private async Task<BlogHeader> GetBlogHeaders() => await _context.BlogHeaders.FirstOrDefaultAsync();
+        private async Task<IEnumerable<Blog>>GetAllBlogs() => await _context.Blogs.Where(m => !m.IsDeleted).ToListAsync();
+        private async Task<BlogHeader> GetBlogHeaders() => await _context.BlogHeaders.Where(m => !m.IsDeleted).FirstOrDefaultAsync();
     }
 }

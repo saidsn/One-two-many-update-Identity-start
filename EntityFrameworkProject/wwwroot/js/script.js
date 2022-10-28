@@ -1,3 +1,4 @@
+const { log } = require("util");
 
 
 $(document).ready(function () {
@@ -38,19 +39,12 @@ $(document).ready(function () {
 
 
 
-
+    //baasket
     $(document).on("click", ".add-to-cart", function () {
 
         let productId = parseInt($(this).closest(".product-item").children(0).val())
 
         let data = { id: productId }
-
-        Swal.fire(
-            'Good job!',
-            'Product Added',
-            'success'
-        )
-
 
         $.ajax({
             url: "/home/addbasket",
@@ -58,11 +52,18 @@ $(document).ready(function () {
             data: data,
             contentType: "application/x-www-form-urlencoded",
             success: function (res) {
-
+                Swal.fire(
+                    'Good job!',
+                    'Product Added',
+                    'success'
+                )
             }
         })
 
     });
+
+
+
 
 
 
